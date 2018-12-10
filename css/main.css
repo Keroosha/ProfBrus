@@ -6,7 +6,7 @@ body{
     font-family: 'roboto';
 }
 /*  */
-.header-table{
+.zag{
     display: none;
 }
 .header-mobile{
@@ -48,6 +48,9 @@ a{
     margin-top: 60px;
     padding: 5px;
     max-width: 500px;
+}
+.l1-2{
+    display: none;
 }
 /*  */
 .l2{
@@ -154,6 +157,9 @@ button{
     background: transparent;
     margin: 0px 10px;
 }
+iframe{
+    display: none;
+}
 /*  */
 @media(min-width:407px){
     .logo{
@@ -177,11 +183,47 @@ button{
     .header-mobile{
         display: none;
     }
+    /*  */
     .header-table{
-        display: block;
-        background: url(hd-tab.jpg);
-        color: white;
+        display: flex;
+        color: black;
+        font-size: 20px;
+        justify-content: space-between;
+        padding: 15px 25px;
+        text-align: center;
     }
+    .zag{
+        display: flex;
+        flex-direction: column;
+        background: url(hd-tab.jpg);
+    }
+    .l1tab{
+        display: flex;
+        text-align: center;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin: 105px auto;
+        font-size: 20px;
+        max-width: 900px;
+    }
+    .tlogo{
+        color: white;
+        font-size: 40px;
+        padding: 10px 0px;
+    }
+    .htc{
+        background: whitesmoke;
+        padding: 10px
+    }
+    /*  */
+    .l1-2{
+        display: flex;
+    }
+    .l1-2 i{
+        font-size: 100px;
+    }
+    /*  */
     .table{
         display: flex;
     }
@@ -196,7 +238,22 @@ button{
     .brus{
         padding: 20px 20px;
     }
+    /*  */
     .l2, .lps{
         margin: auto
+    }
+    .l3{
+        display: flex;
+        flex-direction: column;
+    }
+    .l3-st{
+        display: flex;
+        padding: 30px;
+    }
+    iframe{ 
+        display: block;
+        width: 400px;
+         height: 300px;
+         float: right;
     }
 }
