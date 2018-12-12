@@ -5,7 +5,7 @@ body{
     margin: 0;
     font-family: 'roboto';
 }
-/*  */
+/* Header */
 .zag{
     display: none;
 }
@@ -29,7 +29,7 @@ body{
 .logo2{
     display: none;
 }
-a{
+.header-mobile a{
     text-decoration: none;
     color: white;
 }
@@ -38,7 +38,7 @@ a{
     font-size: 30px;
     padding: 10px 20px;
 }
-/*  */
+/* Layer 1 */
 .l1{
     border: 7px solid green;
     display: flex;
@@ -49,10 +49,7 @@ a{
     padding: 5px;
     max-width: 500px;
 }
-.l1-2{
-    display: none;
-}
-/*  */
+/* Layer 2 */
 .l2{
     display: flex;
     flex-direction: column;
@@ -81,7 +78,7 @@ a{
 .komplekt img, .projekt img, .key img{ 
     width: 100%;
 }
-/*  */
+/* LayerPS */
 .lps{
     margin: 20px 0px;
     padding: 20px;
@@ -90,7 +87,7 @@ a{
     text-align: center;
     border: 10px solid #ff6434;
 }
-/*  */
+/* Layer3 */
 .l3{
     margin: 20px 0px;
     text-align: center;
@@ -108,39 +105,20 @@ a{
     display: flex;
     flex-direction: column-reverse;
 }
-/*  */
-/* .l4{
-    display: flex;
-    border: 3px solid orange;
-    height: 50%;
-    flex-direction: column;
-    margin: 10px;
-}
-.l4-s1{
-    display: flex;
-    height: 50%;
-}
-.l4-s1-r2{
+/* Layer 4 */
+.l4{
     display: flex;
     flex-direction: column;
-    height: 50%;
 }
-.l4 img{
-    height: 100%;
-    width: 100%;
+.facts{
+    font-size: 20px;
+    padding: 0px 20px;
 }
-.l4-s2{
-    display: flex;
-    height: 50%;
+.facts h2{
+    border-left: 5px solid #ff6434;
+    padding-left: 20px;
 }
-.l4-s2-r2{
-    width: 100%;
-    font-size: 40px;
-    background: #ff6434;
-    text-align: center;
-    padding: 40px 0px; 
-}*/
-/*  */
+/* Footer */
 footer{
     background: url(profbrus.jpg);
     text-align: center;
@@ -153,7 +131,10 @@ footer i{
     background: #2267d6;
     padding: 5px;
 }
-/*  */
+.message-foot{
+    display: none;
+}
+/* Slider */
 #lg{
     text-align: center;
     margin: 0px 15px;
@@ -162,18 +143,19 @@ footer i{
     width: 100%;
     height: 300px;
 }
-/*  */
+/* Post */
 button{
-    border: 3px solid #218294;
+    background: #ff6434;
     font-size: 25px;
-    color: #218294;
-    background: transparent;
+    color: white;
     margin: 0px 10px;
+    border: none;
+    padding: 10px;
 }
-iframe{
+.header-menu{
     display: none;
 }
-/*  */
+/* Logo size */
 @media(min-width:407px){
     .logo{
         display: none;
@@ -186,13 +168,18 @@ iframe{
         display: block;
     }
 }
+/* l1 size */
 @media(min-width:548px){
     .l1{
         margin: auto;
         margin-top: 60px;
     }
 }
+/* Table */
 @media(min-width:768px){
+    p{
+        font-size: 20px
+    }
     .header-mobile{
         display: none;
     }
@@ -227,24 +214,30 @@ iframe{
     }
     .htc{
         background: whitesmoke;
-        padding: 10px
+        padding: 10px; 
     }
-    /*  */
-    .l1{
-        margin: 30px auto;
-    }
-    /*  */
-    .l1-2{
-        justify-content: center;
+    /* Menu */
+    .header-menu{
+        list-style: none;
         display: flex;
-        text-align: center;
-        background: #ff6434;
+        justify-content: space-between;
+        padding: 0px 12px;
     }
-    .l1-2 i{
-        font-size: 80px;
+    .header-menu li{
+        margin: 0px 10px;
+        font-size: 15px;
     }
-    .l1-2 div{
-        margin: 30px 10px;
+    .header-menu li a{
+        text-decoration: none;
+color: black;
+    }
+    .header-menu li a :first-child{
+        color: green;
+    }
+    /* layer 1 */
+    .l1{
+        max-width: 1250px;
+        margin: 30px 50px;
     }
     /*  */
     .table{
@@ -274,17 +267,68 @@ iframe{
         flex-direction: row;
         padding: 30px;
     }
-    iframe{ 
-        display: block;
-        width: 400px;
-        height: 300px;
-        float: right;
+    #lg{
+        width: 100%;
+        height: 100%;
     }
-    #lg img{
-        height: 500px;
+    /* layer 4 */
+    .l4{
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 20px 0px;
+    }
+    .facts{
+        width: 100%;
+    }
+    /* footer */
+    footer{
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row-reverse;
+        padding-bottom: 50px;
+        text-align: start;
+    }
+    .message-foot{
+        display: flex;
+        flex-direction: column;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+    input, textarea{
+        border: 1px solid gray;
+        margin: 5px;
+        font-size: 20px;
+        padding: 10px;
+    }
+    .but-foot{
+        display: flex;
+    }
+    .n-n{
+        display: flex;
+    }
+    .n-n input{
+        width: 100%;
+    }
+    textarea{
+        resize: none;
+        height: 150px;
+    }
+    .kontakt-foot{
+        padding: 0px 60px;
+    }
+    .kontakt-foot :nth-child(5){
+    padding: 0px 70px;
     }
 }
 @media(min-width:1240px){
+    .l1{
+        max-width: none;
+    }
+    .zag{
+        background-size: 100%;
+    }
     .table{
         flex-direction: column;
     }
@@ -301,11 +345,12 @@ iframe{
     .table2{
         flex-direction: row;
     }
-    iframe{ 
-        width: 600px;
-        height: 500px;
+    p, a{
+        font-size: 20px
     }
-    #lg img{
-        height: 700px;
+}
+@media(min-width:1600px){
+    p,li,span, button, a{
+        font-size: 30px;
     }
 }
