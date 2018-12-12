@@ -4,6 +4,7 @@ body{
     flex-direction: column;
     margin: 0;
     font-family: 'roboto';
+    background: #9fe8bd99;
 }
 /* Header */
 .zag{
@@ -221,7 +222,9 @@ button{
         list-style: none;
         display: flex;
         justify-content: space-between;
-        padding: 0px 12px;
+        padding: 18px 12px;
+        border-bottom: 1px solid grey;
+        margin: 0;
     }
     .header-menu li{
         margin: 0px 10px;
