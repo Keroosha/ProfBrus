@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="utf-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Дрим Хаус</title>
+    <title>Дрим Хаус - Контакты</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="/css/main.css">
-    <link rel="stylesheet" href="css/kredit.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/dostavka.css">
+    <link rel="stylesheet" href="/css/slider.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="/js/slider.js"></script>
 </head>
 <body>
     <header>
@@ -30,58 +32,48 @@
         </div>
         <div class="header-menu1">
             <ul class="header-menu">
-                <li><a href="/index.html"><i class="fas fa-home"></i></a></li>
+                <li><a href="index.html"><i class="fas fa-home"></i></a></li>
                 <li><a href="">Услуги</a></li>
-                <li><a href="">Цены</a></li>
                 <li><a href="">Доставка</a></li>
-                <li><a href="">Галерея</a></li>
                 <li><a href="">Каталог домов и бань</a></li>
                 <li><a href="">Отзывы</a></li>
-                <li><a href="kredit.html">Кредит</a></li>
+                <li><a href="page/kredit/kredit.html">Кредит</a></li>
                 <li><a href="">Информация</a></li>
                 <li><a href="page/kontakt/cont.html">Контакты</a></li>
             </ul>
         </div>
     </header>
-    <div class="kredit">
-        <h1>Потребительский Кредит на строителство дома, коттеджа</h1>
-        <img src="img/kredit.jpg" alt="Срок кредита до 7 лет">
-        <h1>Цель кредита определяете Вы!</h1>
-        <table> 
-            <tr>
-                <td>Максимальный срок кредита</td>
-                <td>7 лет</td>
-                <td rowspan="2">
-                    <h2>Пакет документов:</h2>
-                    <ul>
-                        <li>Паспорт гражданина РФ</li>
-                        <li>Договор на строителство дома/договор на выполнение подрядных работ</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>Максимальная сумма кредита, руб.</td>
-                <td>8 000 000 (при залоге авто)<br> 3 000 000 (без залога)</td>
-            </tr>
-            <tr>
-                <td>Ставка при выборе страхования жизни при залоге</td>
-                <td>12,4%</td>
-                <td rowspan="2">
-                    <h2>Требования к заемщика:</h2>
-                    <ul>
-                        <li>Гражданинство РФ</li>
-                        <li>Постоянная регистрация в регионе присутствия банка</li>
-                        <li>Возраст от 21 года до 68 лет на момент окончания срока действия кредитного договора</li>
-                        <li>Наличие постоянного источника дохода (непрерывный стаж на последнем месте работы — не менее 4 месяцев, общий трудовой стаж — не менее 3 лет).</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>Ставка при выборе страхования жизни без залога</td>
-                <td>13,4%</td>
-            </tr>
-        </table> 
+    <div class="l1 dostavka">
+        <h1>Доставка бруса</h1>
+        <p>Доставка осуществляется автомобилями:</p>
+        <ul>
+            <li>КАМАЗ с прицепом (объем перевозимого пиломатериала - 30 куб. м.)</li>
+            <li>Еврофура (объем - 40-45 куб.м.).</li>
+        </ul>
+        <p>Стоимость доставки бруса и пиломатериала уточняйте у наших менеджеров.</p>
     </div>
+    <div id="lg">
+            <div class="row centered dostavka-i">
+                <div class="slider">
+                    <div class="slider__wrapper">
+                        <div class="slider__item">
+                            <img src="img/preview_1.jpg" alt="a">
+                        </div>
+                        <div class="slider__item">
+                            <img src="img/preview_2.jpg" alt="a">
+                        </div>
+                        <div class="slider__item">
+                            <img src="img/preview_3.jpg" alt="a">
+                        </div>      
+                        <div class="slider__item">
+                            <img src="img/preview_4.jpg" alt="a">
+                        </div>
+                    </div>
+                    <a class="slider__control slider__control_left" href="#lg" role="button"></a>
+                    <a class="slider__control slider__control_right slider__control_show" href="#lg" role="button"></a>
+                </div>
+            </div>
+        </div>
     <footer>
         <div class="message-foot">
             <h1>Пишите нам</h1>
@@ -109,4 +101,6 @@
             <p>© «Дрим Хаус» 2015-2019</p>
         </div>
     </footer>
+    <script src="/js/slider.js"></script>
 </body>
+</html>

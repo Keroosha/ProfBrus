@@ -1,8 +1,26 @@
 .kredit{
+    display: flex;
+    flex-direction: column;
     margin-top: 60px;
     padding: 20px;
+    
+}
+.kredit h1{
+    text-align: center;
 }
 .kredit img{
-    width:100%;
-    max-width: 1200px;
+    width:50%;
+    margin: 0px auto;
+}
+td{
+    padding: 10px;
+    border: 1px solid black;
+}
+table{
+    border-collapse: collapse; 
+}
+@media(min-width:768px){
+ .kredit{
+     margin: 0;
+ }
 }

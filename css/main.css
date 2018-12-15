@@ -16,9 +16,9 @@ body{
     padding: 0px 20px;
     position: fixed;
     justify-content: flex-end;
-    text-align: center;
     left:0;
     right: 0;
+    color: white;
 }
 .logo{
     font-family: 'Oswald', solid;
@@ -39,6 +39,68 @@ body{
     font-size: 30px;
     padding: 10px 20px;
 }
+/* vipad */
+.hm-kontakt{
+    background: rgb(11, 151, 11);
+    position: fixed;
+    display: none;
+    left:0;
+    width: 100%;
+}
+.hm-message{
+    background: rgb(11, 151, 11);
+    position: fixed;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    display: none;
+}
+.hm-menu{
+    background: rgb(11, 151, 11);
+    position: fixed;
+    left: 0;
+    width: 100%;
+    font-size: 20px;
+    display: none;
+}
+.hm-menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.hm-menu li{
+    margin: 5px 0px;
+    padding: 5px 10px; 
+}
+.hm-message p{
+    font-size: 15px;
+}
+.hm-message input, .hm-message textarea{
+    font-size: 20px;
+    padding: 10px;
+    margin: 5px 0px;
+    border: 1px solid black;
+}
+.hm-kontakt ul{
+    list-style: none;
+    padding: 2px 20px;
+}
+.vipad [type="checkbox"]{
+    display: none;
+}
+input.togglekontakt:checked + label.togglekontakt,
+input.togglemessage:checked + label.togglemessage,
+input.togglemenu:checked + label.togglemenu{
+    color: black;
+}
+input.togglekontakt:checked ~ .hm-kontakt,
+input.togglemessage:checked ~ .hm-message,
+input.togglemenu:checked ~ .hm-menu{
+    display: block;
+}
+.activ{
+    background: #ff6434;
+}
 /* Layer 1 */
 .l1{
     border: 7px solid green;
@@ -47,7 +109,7 @@ body{
     justify-content: center;
     margin: 10px;
     margin-top: 60px;
-    padding: 5px;
+    padding: 10px 20px;
     max-width: 500px;
 }
 /* Layer 2 */
@@ -232,7 +294,7 @@ button{
     }
     .header-menu li a{
         text-decoration: none;
-color: black;
+        color: black;
     }
     .header-menu li a :first-child{
         color: green;
@@ -299,7 +361,7 @@ color: black;
         display: flex;
         flex-direction: column;
     }
-    input, textarea{
+   .message-foot input, .message-foot textarea{
         border: 1px solid gray;
         margin: 5px;
         font-size: 20px;
@@ -322,7 +384,7 @@ color: black;
         padding: 0px 60px;
     }
     .kontakt-foot :nth-child(5){
-    padding: 0px 70px;
+        padding: 0px 70px;
     }
 }
 @media(min-width:1240px){
